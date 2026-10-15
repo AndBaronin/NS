@@ -1,5 +1,6 @@
 
 import Header from './components/Header';
+import Footer from './components/Footer';
 import './App.css';
 
 
@@ -100,32 +101,11 @@ function HomePage() {
         </p>
       </section>
 
-      <section className="contact-section" id="contacts">
-        <div className="section-container">
-          <p className="eyebrow">YOUR NEXT CHAPTER</p>
-          <h2>Let’s find your place in Crete.</h2>
-          <a className="primary-button" href="mailto:">
-            Get in touch <span aria-hidden="true">↗</span>
-          </a>
-        </div>
-      </section>
+      
     </main>
   );
 }
 
-function Footer() {
-  return (
-    <footer className="site-footer">
-      <a className="brand footer-brand" href="#home">
-        <span className="brand-name">NATALIA SARONOVA</span>
-        <span className="brand-caption">PROPERTY IN CRETE</span>
-      </a>
-
-      <p>In the Land of Myths, Trust is Everything.</p>
-      <a href="#home">Back to top ↑</a>
-    </footer>
-  );
-}
 
 function App() {
   return (
