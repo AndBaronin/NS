@@ -1,5 +1,14 @@
 
 import { useEffect, useState } from 'react';
+import {
+  FaPhone,
+  FaEnvelope,
+  FaWhatsapp,
+  FaInstagram,
+  FaFacebookF,
+  FaYoutube,
+  FaTiktok,
+} from 'react-icons/fa6';
 
 function Footer() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -38,9 +47,62 @@ function Footer() {
             </p>
 
             {/* TODO: Add confirmed contact links */}
-            <div className="footer-contacts">
-              {/* Email, phone, WhatsApp and social networks */}
+            
+            <div className="footer-links" aria-label="Contact links">
+            <a href="tel:+300000000000" aria-label="Phone" title="Phone">
+                <FaPhone />
+            </a>
+
+            <a href="mailto:info@example.com" aria-label="Email" title="Email">
+                <FaEnvelope />
+            </a>
+
+            <a
+                href="#"
+                aria-label="WhatsApp"
+                title="WhatsApp"
+                onClick={(event) => event.preventDefault()}
+            >
+                <FaWhatsapp />
+            </a>
+
+            <a
+                href="#"
+                aria-label="Instagram"
+                title="Instagram"
+                onClick={(event) => event.preventDefault()}
+            >
+                <FaInstagram />
+            </a>
+
+            <a
+                href="#"
+                aria-label="Facebook"
+                title="Facebook"
+                onClick={(event) => event.preventDefault()}
+            >
+                <FaFacebookF />
+            </a>
+
+            <a
+                href="#"
+                aria-label="YouTube"
+                title="YouTube"
+                onClick={(event) => event.preventDefault()}
+            >
+                <FaYoutube />
+            </a>
+
+            <a
+                href="#"
+                aria-label="TikTok"
+                title="TikTok"
+                onClick={(event) => event.preventDefault()}
+            >
+                <FaTiktok />
+            </a>
             </div>
+
           </div>
         </section>
 
