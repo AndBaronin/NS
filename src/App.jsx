@@ -1,37 +1,7 @@
 
+import Header from './components/Header';
 import './App.css';
 
-const navigation = [
-  { label: 'Home', href: '#home' },
-  { label: 'My Story', href: '#my-story' },
-  { label: 'Properties', href: '#properties' },
-  { label: 'Services', href: '#services' },
-  { label: 'About Crete', href: '#about-crete' },
-  { label: 'Contacts', href: '#contacts' },
-];
-
-function Header() {
-  return (
-    <header className="site-header">
-      <a className="brand" href="#home" aria-label="Natalia Saronova Property — Home">
-        <span className="brand-name">NATALIA SARONOVA</span>
-        <span className="brand-caption">PROPERTY IN CRETE</span>
-      </a>
-
-      <nav className="main-nav" aria-label="Main navigation">
-        {navigation.map((item) => (
-          <a key={item.href} href={item.href}>
-            {item.label}
-          </a>
-        ))}
-      </nav>
-
-      <a className="header-contact" href="#contacts">
-        Get in touch
-      </a>
-    </header>
-  );
-}
 
 function HomePage() {
   return (
